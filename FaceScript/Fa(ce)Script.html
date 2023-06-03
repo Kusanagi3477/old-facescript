@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./Fa(ce)Script.css">
+   <title>Fa(c∀e)ScriptEditor</title>
+</head>
+<body>
+   
+   <img src="image/logo.png" alt="logo" width="220px" class="logo-img">
+   <button class="run" data-run="run">R(u∀n)</button>
+   <textarea id="input" cols="60" rows="12"></textarea>
+   <div class="result" data-result="result"></div>
+
+   <table border="1">
+      <tr>
+         <th>構文</th>
+         <th>意味</th>
+         <th>例</th>
+      </tr>
+      <tr>
+         <td>/('n')</td>
+         <td>数値の値。nの箇所には任意の値を。</td>
+         <td>/('7')</td>
+      </tr>
+      <tr>
+         <td>/('&lt;Text')</td>
+         <td>文字の値。Textの箇所には任意の値を。</td>
+         <td>/('&lt;Hello!')</td>
+      </tr>
+      <tr>
+         <td>(°O°)Val</td>
+         <td>値を出力する。Valの箇所に入力した値が出力されます。</td>
+         <td>(°O°)/('&lt;foo!')</td>
+      </tr>
+      <tr>
+         <td>(-#-)Text</td>
+         <td>何もない。Textの箇所には自由に文字を書いて、メモとして使ったりしよう。</td>
+         <td>(-#-)Banana! Banana!</td>
+      </tr>
+      <tr>
+         <td>\(°∀°)q(Name)pVal</td>
+         <td>変数を作る。Nameの箇所には変数名、Valの箇所には代入する値を。</td>
+         <td>\(°∀°)q(delicious)p/('&lt;banana')</td>
+      </tr>
+      <tr>
+         <td>:Dd(Name)bVal</td>
+         <td>変数の再代入をする。Nameの箇所には変数名、Valの箇所には再代入する値を。</td>
+         <td>:Dd(delicious)b/('&lt;apple')</td>
+      </tr>
+      <tr>
+         <td>d('Name')b</td>
+         <td>変数内の値を使う。Nameの箇所には使う変数名を。</td>
+         <td>d('delicious')b</td>
+      </tr>
+      <tr>
+         <td>=(x+=+y)</td>
+         <td>足し算。xとyにはそれぞれ任意の値を。</td>
+         <td>=(/('6')+=+/('3'))</td>
+      </tr>
+      <tr>
+         <td>=(x-=-y)</td>
+         <td>引き算。xとyにはそれぞれ任意の値を。</td>
+         <td>=(/('6')-=-/('3'))</td>
+      </tr>
+      <tr>
+         <td>=(x*=*y)</td>
+         <td>掛け算。xとyにはそれぞれ任意の値を。</td>
+         <td>=(/('6')*=*/('3'))</td>
+      </tr>
+      <tr>
+         <td>=(x/=/y)</td>
+         <td>割り算。xとyにはそれぞれ任意の値を。スラッシュだらけで混乱するよね。</td>
+         <td>=(/('6')/=//('3'))</td>
+      </tr>
+      <tr>
+         <td>(O.O)Val</td>
+         <td>小数点切り捨て。xには任意の値を。</td>
+         <td>(O.O)/('2.5')</td>
+      </tr>
+      <tr>
+         <td>(*n*)x?=?y</td>
+         <td>乱数。xには最小値、yには最大値を。</td>
+         <td>(*n*)/('1')?=?/('3')</td>
+      </tr>
+   </table>
+
+   <script src="./Fa(ce)Script.js"></script>
+
+</body>
+</html>
